@@ -41,7 +41,7 @@ dependencies {
 
     implementation files("libs/sdkwallet_release_1_1.0.1.aar")
 
-    implementation "vn.teko.terra:terra-core-android:0.4.1"
+    implementation "vn.teko.terra:terra-core-android:0.4.5"
 
     implementation "vn.teko.android.payment:payment-manager-v2:1.1.0-alpha.2"
     implementation "vn.teko.android.payment:payment-ui:1.1.0-alpha.2"

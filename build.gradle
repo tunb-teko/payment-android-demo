@@ -6,7 +6,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.1.1"
+        classpath "com.android.tools.build:gradle:3.6.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -22,8 +22,6 @@ allprojects {
 
         Properties properties = new Properties()
         properties.load(project.rootProject.file('local.properties').newDataInputStream())
-        def sdkDir = properties.getProperty('sdk.dir')
-        def ndkDir = properties.getProperty('ndk.dir')
         maven() {
             name = "TekoMaven"
             url = uri("https://maven.pkg.github.com/teko-vn/android-packages")
