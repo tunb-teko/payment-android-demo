@@ -7,10 +7,7 @@ import vn.teko.terra.core.android.terra.TerraApp
 class ExampleApp : Application() {
 
     override fun onCreate() {
-        val terraApp = TerraApp.initializeApp(this)
+        TerraApp.initializeApp(this)
         super.onCreate()
-        TerraPayment.getInstance(this, terraApp).apply {
-            config.userId = "Fixed UserId"
-        }
     }
 }
